@@ -10,7 +10,13 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # Your application UI logic
     fluidPage(
-      h1("centralD")
+      h1("centralD"),
+      tabsetPanel(
+        tabPanel(title = "peptide_sequence",
+                 mod_RAA1_ui("RAA1_1")),
+        tabPanel(title = "plot",
+                 mod_RAA2_ui("RAA2_1"))
+      )
     )
   )
 }

@@ -1,13 +1,25 @@
 Package: centralD
 Title: centralDogma
 Version: 0.0.0.9000
-Authors@R: person('Dilan', 'Cifci', email = 's233597@dtu.dk', role = c('cre', 'aut'))
+Authors@R: c(
+    person("Dilan", "Cifci", , "s233597@dtu.dk", role = c("aut", "cre")),
+    person("Christian", "Christensen", , "s223096@dtu.dk", role = "aut"),
+    person("Mikkel", "Hansen", , "mikkelpiester@gmail.com", role = "aut"),
+    person("Dea", "Bajo", , "s232105@dtu.dk", role = "aut")
+  )
 Description: PKG_DESC.
 License: MIT + file LICENSE
 Imports: 
+    centralDogma,
     config (>= 0.3.1),
+    ggplot2,
     golem (>= 0.4.1),
     shiny (>= 1.7.5)
+Suggests: 
+    spelling,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
 Encoding: UTF-8
+Language: en-US
 LazyData: true
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.3
